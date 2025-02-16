@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../">
 <head>
@@ -5,19 +7,15 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>cryoDRGN EMPIAR-10076 tutorial &mdash; CryoDRGN  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
-        <script src="../_static/doctools.js?v=9a2dae69"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -259,7 +257,7 @@
 <ul>
 <li><p>What are <code class="docutils literal notranslate"><span class="pre">.pkl</span></code> files?</p>
 <p>A <a class="reference external" href="https://docs.python.org/3/library/pickle.html">pickle</a> is a python module/format that allows you to serialize most python data objects to disk and re-load without any type conversion or file parsing. You can view any .pkl object using the cryoDRGN API :</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cryodrgn</span> <span class="kn">import</span> <span class="n">utils</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">cryodrgn</span><span class="w"> </span><span class="kn">import</span> <span class="n">utils</span>
 <span class="n">z</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">load_pkl</span><span class="p">(</span><span class="s1">&#39;z.pkl&#39;</span><span class="p">)</span>
 <span class="n">utils</span><span class="o">.</span><span class="n">save_pkl</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="s1">&#39;z.copy.pkl&#39;</span><span class="p">)</span>
 </pre></div>
@@ -703,7 +701,7 @@ Decoder Network:
 <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">03</span> <span class="mi">17</span><span class="p">:</span><span class="mi">46</span><span class="p">:</span><span class="mi">01</span>     <span class="n">Use</span> <span class="n">cuda</span> <span class="kc">True</span>
 <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">03</span> <span class="mi">17</span><span class="p">:</span><span class="mi">46</span><span class="p">:</span><span class="mi">09</span>     <span class="n">Loaded</span> <span class="mi">131899</span> <span class="mi">128</span><span class="n">x128</span> <span class="n">images</span>
 <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">03</span> <span class="mi">17</span><span class="p">:</span><span class="mi">47</span><span class="p">:</span><span class="mi">54</span>     <span class="n">Normalized</span> <span class="n">HT</span> <span class="n">by</span> <span class="mi">0</span> <span class="o">+/-</span> <span class="mf">278.593719482421</span>
-<span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">03</span> <span class="mi">17</span><span class="p">:</span><span class="mi">48</span><span class="p">:</span><span class="mi">04</span>     <span class="n">Loading</span> <span class="n">ctf</span> <span class="n">params</span> <span class="kn">from</span> <span class="o">/</span><span class="n">nobackup</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="n">zhonge</span><span class="o">/</span><span class="n">cryodrgn</span><span class="o">/</span><span class="mi">11</span><span class="n">_l17_ribo</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ctf</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">pkl</span>
+<span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">03</span> <span class="mi">17</span><span class="p">:</span><span class="mi">48</span><span class="p">:</span><span class="mi">04</span>     <span class="n">Loading</span> <span class="n">ctf</span> <span class="n">params</span> <span class="kn">from</span><span class="w"> </span><span class="o">/</span><span class="n">nobackup</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="n">zhonge</span><span class="o">/</span><span class="n">cryodrgn</span><span class="o">/</span><span class="mi">11</span><span class="n">_l17_ribo</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">ctf</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">pkl</span>
 <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">03</span> <span class="mi">17</span><span class="p">:</span><span class="mi">48</span><span class="p">:</span><span class="mi">04</span>     <span class="n">Image</span> <span class="n">size</span> <span class="p">(</span><span class="n">pix</span><span class="p">)</span>  <span class="p">:</span> <span class="mi">128</span>
 <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">03</span> <span class="mi">17</span><span class="p">:</span><span class="mi">48</span><span class="p">:</span><span class="mi">04</span>     <span class="n">A</span><span class="o">/</span><span class="n">pix</span>             <span class="p">:</span> <span class="mf">3.2750000953674316</span>
 <span class="mi">2021</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">03</span> <span class="mi">17</span><span class="p">:</span><span class="mi">48</span><span class="p">:</span><span class="mi">04</span>     <span class="n">DefocusU</span> <span class="p">(</span><span class="n">A</span><span class="p">)</span>      <span class="p">:</span> <span class="mf">15301.099609375</span>
